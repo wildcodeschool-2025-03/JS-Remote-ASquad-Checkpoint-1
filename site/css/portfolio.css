@@ -11,12 +11,14 @@
   --textAlign: center;
 }
 
+
 img {
   max-width: 100%;
 }
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  font-weight: bold;
 }
 
 p {
@@ -39,7 +41,6 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
-  display: flex;
   justify-content: center;
 }
 
@@ -58,6 +59,15 @@ p {
 
 .pink-bg {
   background-color: var(--lightWildColor);
+}
+
+.textChangeBtn{
+  outline: white 2px solid;
+  background-color: #F5BED5;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 8px;
+
 }
 
 .skills {
@@ -158,10 +168,17 @@ p {
   }
 
   .column {
-    padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 10);
+    padding: 70px 150px;
     border-radius: var(--radius );
+    
   }
 
-
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(70% - 10%);
+    box-sizing: border-box;
+  }
   
 }
