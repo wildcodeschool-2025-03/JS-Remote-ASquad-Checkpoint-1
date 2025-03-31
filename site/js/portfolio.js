@@ -9,12 +9,19 @@ avatar.src="image/avatar.svg";
 
 const button = document.querySelector(".buttonJS")
 const username =document.getElementById("firstname")
+const color = document.querySelector(".description.pink-bg")
 
 button.addEventListener("click",() => {
     const myName = prompt("Votre prénom ?");
+    const myColor = prompt("Votre couleur ?")
     if (myName) {
         username.textContent = myName;
         username.style.color = "white";
     }
+
+    if(myColor) {
+        color.style.backgroundColor = myColor
+    }
+    
 
 });
