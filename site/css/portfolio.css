@@ -142,3 +142,9 @@ p {
     font-family: Roboto;
   }
 }
+
+@media (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
+}
