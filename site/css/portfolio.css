@@ -126,7 +126,7 @@ nav {
 
 .skills {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
 }
 
