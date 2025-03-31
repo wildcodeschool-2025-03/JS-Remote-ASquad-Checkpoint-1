@@ -109,6 +109,11 @@ p {
   color: var(--purple);
 }
 
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 @media screen and (max-width: 699px) {
   .desktop {
     display: none;
@@ -129,6 +134,7 @@ p {
 
   .skills {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
