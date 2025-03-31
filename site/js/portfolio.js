@@ -11,3 +11,23 @@ avatar.addEventListener('click', () => {
     avatar.src = avatar1;
   }
 });
+
+const descriptionSection = document.querySelector('.description');
+const modifyButton = document.createElement('button');
+modifyButton.textContent = 'Modify text and color';
+modifyButton.style.backgroundColor = '#ec9797'; 
+modifyButton.style.color = 'white';
+modifyButton.style.padding = '10px 20px';
+
+descriptionSection.appendChild(modifyButton);
+
+
+modifyButton.addEventListener('click', () => {
+  const newName = prompt('Enter your name:');
+
+  if (newName) {
+    const firstNameSpan = document.getElementById('firstname');
+    firstNameSpan.textContent = newName;
+    firstNameSpan.style.color = 'white';
+  }
+});
