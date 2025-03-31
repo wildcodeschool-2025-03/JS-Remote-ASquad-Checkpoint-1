@@ -111,6 +111,14 @@ p {
   color: var(--purple);
 }
 
+.first-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+
 @media (min-width: 700px) {
   nav {
     display: flex;
