@@ -118,6 +118,8 @@ p {
   padding: 5px;
 }
 
+
+
 @media screen and (min-width: 700px) {
 
 /* Step 1 */
@@ -152,8 +154,6 @@ nav {
 .skills--title {
   display: none;
 }
-
-
 
 
 
