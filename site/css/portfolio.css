@@ -153,5 +153,15 @@ nav {
   .desktop {
     display: none;
   }
+
+
+
+  /* Step 5 */
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
   
