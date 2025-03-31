@@ -9,7 +9,13 @@ avatar.addEventListener("click", () => {
 
 const buttonName = document.querySelector(".buttonname");
 const name = document.querySelector("#firstname");
-const pinkBackground = document.querySelector(".pink-bg");
+const variableColor = document.documentElement;
+
+/*step 4 */
+
+getComputedStyle(variableColor).getPropertyValue("--wildColor");
+getComputedStyle(variableColor).getPropertyValue("--lightWildColor");
+
 buttonName.addEventListener("click", () => {
     const newName = prompt("Enter your name");
     if (newName) {
@@ -17,7 +23,8 @@ buttonName.addEventListener("click", () => {
       name.style.color = "white";
       const newColor = prompt("Enter a color");
       if (newColor) {
-        pinkBackground.style.backgroundColor = newColor;
+        document.documentElement.style.setProperty("--wildColor", newColor);
+    document.documentElement.style.setProperty("--lightWildColor", newColor);
       }
     }});
     
