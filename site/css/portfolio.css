@@ -111,6 +111,7 @@ nav{
 .column ul {
   list-style: none;
   padding: 0;
+ 
 }
 
 .pink-text {
@@ -156,5 +157,9 @@ background-color: var(--wildColor);
 color: var(--textColor);
 }
 
+#front-dev-tools{
+display: flex;
+flex-direction: column;
+}
 
 

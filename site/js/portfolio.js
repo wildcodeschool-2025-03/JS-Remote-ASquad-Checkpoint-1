@@ -128,13 +128,10 @@ nameBtn.addEventListener("click", () => {
     element.style.setProperty("--lightWildColor", newColor);
     
 
-    //modifing the links color
+    //modifing the links color (Tried forEach but didn't work....)
     for (let i = 0; i < links.length; i++) {
         links[i].style.color = newColor;
     }
-    
-    
-    
     
 
     //keeping the second prompt for name text  and color change
@@ -143,4 +140,32 @@ nameBtn.addEventListener("click", () => {
     name.textContent = newName;
     name.style.color = "white";
 
+});
+
+
+//part 6
+//The user can change all li elements in the list dev tool front (ul) with a simple button.
+
+// adding a button to front dev tools
+const column = document.getElementById("front-dev-tools");
+const liButton = document.createElement("button");
+liButton.id = ("liBtn");
+liButton.textContent = "Modify";
+column.appendChild(liButton);
+
+// modifying the content of the list
+
+//List of values:
+const skills = ["VS CODE", "GITHUB", "TERMINAL"];
+const liBtn = document.getElementById("liBtn");
+liBtn.addEventListener("click", () => {
+
+    //modifing the list using forEach
+    const list = document.querySelectorAll("#front-dev-tools li");
+    list.forEach((item, index) => {
+        if (index < skills.length) {
+            item.textContent = skills[index];
+        }
+    });
+    
 });
