@@ -8,7 +8,7 @@ avatar.onclick = function () {
     }
 }
 
-const buttonChangeName = document.querySelector("button");
+const buttonChangeName = document.querySelector(".first-button");
 
 
 buttonChangeName.addEventListener('click', function() {
@@ -33,4 +33,15 @@ buttonChangeName.addEventListener('click', function() {
         link.style.color = newColor;
     }
 });  
+
+const changeList = document.querySelector(".dev-tools-button")
+changeList.addEventListener('click', function() {
+    const li1 = document.getElementById("front-dev-tools1");
+    const li2 = document.getElementById("front-dev-tools2");
+    const li3 = document.getElementById("front-dev-tools3");
+
+    li1.textContent = "VSCode";
+    li2.textContent = "GitHub";
+    li3.textContent = "Terminal";
+})
 
