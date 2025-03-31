@@ -117,4 +117,8 @@ p {
     justify-content: space-between;
   }
 
+  .banner {
+    justify-items: center;
+  }
+
 }
