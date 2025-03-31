@@ -153,6 +153,10 @@ p {
     width: 50%;
   }
 
+  .skills h2{
+    display: none;
+  }
+
 }
 
 @media (max-width: 699px) {
