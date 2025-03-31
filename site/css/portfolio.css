@@ -110,6 +110,14 @@ p {
 }
 
 
+/* CSS for button */
+
+#button {
+  background-color: rgb(238, 201, 227);
+  border: 2px solid white;
+  padding: 5px;
+}
+
 @media screen and (min-width: 700px) {
 
 /* Step 1 */
