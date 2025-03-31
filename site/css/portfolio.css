@@ -108,6 +108,10 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.disabled {
+  opacity: 0.3;
+}
 @media screen and (min-width: 700px) {
   
   nav {
