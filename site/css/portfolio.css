@@ -148,4 +148,15 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  
+  
+  .skills--title {
+    display: none;
+  }
 }
