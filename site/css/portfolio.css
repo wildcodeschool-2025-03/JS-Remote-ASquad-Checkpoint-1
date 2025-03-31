@@ -73,17 +73,22 @@ p {
 }
 
 .skills {
+  display: flex;
+  justify-content: center;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+
 }
 
 .skills--title {
+  display: none;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
 
 .column {
+  width: 50%;
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
