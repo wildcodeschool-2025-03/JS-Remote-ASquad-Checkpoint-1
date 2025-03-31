@@ -60,6 +60,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -147,6 +149,7 @@ p {
   .skills {
     display: flex;
     justify-content: center;
+    flex-direction: row;
   }
  
   .skills section {
