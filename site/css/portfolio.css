@@ -11,8 +11,22 @@
   --textAlign: center;
 }
 
+.banner{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+#first_banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 img {
   max-width: 100%;
+}
+.img_desktop{
+  margin-left: 30%;
 }
 
 h1 {
@@ -26,13 +40,23 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  }
+
+header nav{
+display: flex;
+  justify-content: space-between;
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
-}
+  @media screen and (max-width: 700px){
+    display: none;
+  }  
+    
+  }
+
 
 .description {
   color: var(--light);
@@ -41,6 +65,8 @@ p {
   align-items: center;
   padding: calc(var(--gutter) * 3.75);
 }
+
+
 
 .description p {
   width: 60%;
@@ -55,11 +81,21 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction:column-reverse;
+justify-content: center;
+  @media screen and (min-width: 700px){ 
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+} 
+
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  display: none;
 }
 
 .column {
@@ -71,16 +107,27 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  display: flex;
+  flex-direction: column;
+align-items: space center;
+width: 100%;
 }
+#img_skill{
+  width: 15%;
+  margin-left: 40%;
+  
+} 
 
 .column:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+ 
 }
 
 .column:last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+
 }
 
 .column ul {
@@ -94,6 +141,19 @@ p {
 
 .projects a {
   color: var(--purple);
+
+}
+
+.disabled_opac  {
+opacity: 0.5;
+
+}
+
+#bloc_box{
+  display: flex;
+  align-items: center    ;
+  flex-wrap: wrap;
+justify-content: space-around;
 }
 
 .box {
@@ -103,8 +163,19 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+
+  @media screen and (max-width: 700px){
+    width: 100%;
+  }  
 }
 
 .purple-text {
   color: var(--purple);
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
