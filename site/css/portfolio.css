@@ -108,3 +108,14 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/* Ecran superieurs à 700px  */
+
+@media (min-width:700px){
+nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+}
