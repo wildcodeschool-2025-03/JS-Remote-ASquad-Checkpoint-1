@@ -129,7 +129,21 @@ nav {
 
 }
 
+
+/* Step 4 */
+
+.skills {
+  display: flex;
+  justify-content: center;
 }
+.column {
+  width: 60%;
+}
+.skills--title {
+  display: none;
+}
+}
+
 
 
 @media screen  and (max-width: 700px) {
