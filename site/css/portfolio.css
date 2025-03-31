@@ -47,6 +47,9 @@ p {
   text-align: var(--textAlign);
 }
 
+.avatar2 {
+  display : none;
+}
 .pink-bg {
   background-color: var(--lightWildColor);
 }
