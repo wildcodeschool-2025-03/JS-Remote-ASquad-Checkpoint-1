@@ -135,6 +135,8 @@ nav {
 .skills {
   display: flex;
   justify-content: center;
+  /* Step 6 */
+  flex-direction: row-reverse;
 }
 .column {
   width: 60%;
@@ -142,6 +144,11 @@ nav {
 .skills--title {
   display: none;
 }
+
+
+
+
+
 }
 
 
