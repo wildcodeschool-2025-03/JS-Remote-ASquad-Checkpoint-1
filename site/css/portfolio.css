@@ -130,3 +130,14 @@ nav {
 }
 
 }
+
+
+@media screen  and (max-width: 700px) {
+
+  /* Step 3 */
+
+  .desktop {
+    display: none;
+  }
+}
+  
