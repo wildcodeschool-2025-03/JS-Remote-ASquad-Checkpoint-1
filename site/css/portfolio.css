@@ -112,10 +112,16 @@ p {
 .disabled {
   opacity: 0.3;
 }
-
 .projects{
-  display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.allbox {
+  display: flex;
+ justify-content: space-between;
+}
+.boxdovetail{
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 700px) {
   
