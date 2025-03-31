@@ -43,5 +43,19 @@ changeList.addEventListener('click', function() {
     li1.textContent = "VSCode";
     li2.textContent = "GitHub";
     li3.textContent = "Terminal";
-})
+});
+
+const addTool = document.querySelector(".add-button");
+addTool.addEventListener('click', function() {
+    const newTool = document.querySelector("input").value.trim();
+    if (newTool.length === 0) {
+        alert("Please enter a dev tool");
+        return
+    }
+
+    const newListItem = document.createElement('li');
+    newListItem.textContent = newTool;
+    const addingList = document.querySelector(".new-tool");
+    addingList.appendChild(newListItem);
+});
 

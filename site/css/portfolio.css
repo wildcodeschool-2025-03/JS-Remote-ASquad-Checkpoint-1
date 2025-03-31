@@ -123,7 +123,7 @@ button {
   color: #ffffff;
   border: #ffffff solid 2px;
   border-radius: 12px;
-  height: 48px;
+  height: 40px;
 }
 
 @media screen and (max-width: 699px) {
