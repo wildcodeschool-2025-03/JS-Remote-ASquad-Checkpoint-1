@@ -79,6 +79,7 @@ p {
 }
 
 .skills--title {
+  display: none;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
@@ -117,15 +118,20 @@ p {
   color: var(--lightWildColor);
 }
 
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects a {
   color: var(--purple);
 }
 
 .box {
-  width: 25%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
-  margin: calc(var(--gutter) * 1.25);
+  margin: 20px 10px;
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
 }
@@ -173,12 +179,22 @@ p {
     
   }
 
-  .projects {
+  .titleSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 calc(70% - 10%);
-    box-sizing: border-box;
   }
-  
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+  }
+
+  .box {
+    width: 30%;
+  }
 }
