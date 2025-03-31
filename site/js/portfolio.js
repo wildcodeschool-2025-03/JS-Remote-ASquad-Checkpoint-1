@@ -23,11 +23,18 @@ descriptionSection.appendChild(modifyButton);
 
 
 modifyButton.addEventListener('click', () => {
-  const newName = prompt('Enter your name:');
-
-  if (newName) {
-    const firstNameSpan = document.getElementById('firstname');
-    firstNameSpan.textContent = newName;
-    firstNameSpan.style.color = 'white';
-  }
-});
+    
+    const newColor = prompt('Enter a color:');
+  
+    if (newColor) {
+      const newName = prompt('Enter your name:');
+  
+      if (newName) {
+        const firstNameSpan = document.getElementById('firstname');
+        firstNameSpan.textContent = newName;
+        firstNameSpan.style.color = 'white';
+  
+        document.querySelector('.description.pink-bg').style.backgroundColor = newColor;
+      }
+    }
+  });
