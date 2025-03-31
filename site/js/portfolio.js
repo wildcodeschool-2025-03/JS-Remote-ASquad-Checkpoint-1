@@ -72,6 +72,7 @@ nameBtn.addEventListener("click", () => {
 
 //part 4
 // mogifing the button to change pink color elements on user choice
+/*
 const nameBtn = document.getElementById("nameBtn");
 nameBtn.addEventListener("click", () => {
     //root element
@@ -87,6 +88,52 @@ nameBtn.addEventListener("click", () => {
     //modifing the CSS color variables values
     document.documentElement.style.setProperty("--wildColor", newColor);
     document.documentElement.style.setProperty("--lightWildColor", newColor);
+    
+    
+
+    //keeping the second prompt for name text  and color change
+    const newName = prompt("Enter your name:");
+    const name = document.getElementById("firstname");
+    name.textContent = newName;
+    name.style.color = "white";
+
+});
+
+*/
+
+
+//part 5
+//The user can change the color of all the links by changing the root element color:
+
+
+
+const nameBtn = document.getElementById("nameBtn");
+nameBtn.addEventListener("click", () => {
+    //root element
+    const element = document.documentElement;
+
+    //selecting all links
+    const links = document.getElementsByTagName("a");
+
+    //Get the current color variables value
+    getComputedStyle(element).getPropertyValue("--wildColor");
+    getComputedStyle(element).getPropertyValue("--lightWildColor");
+
+    //adding first prompt for color choice
+    const newColor = prompt("Enter your color:");
+
+    
+    //modifing the CSS color variables values
+    element.style.setProperty("--wildColor", newColor);
+    element.style.setProperty("--lightWildColor", newColor);
+    
+
+    //modifing the links color
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.color = newColor;
+    }
+    
+    
     
     
 
