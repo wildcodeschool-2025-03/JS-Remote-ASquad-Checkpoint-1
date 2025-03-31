@@ -118,6 +118,11 @@ p {
   padding: 5px;
 }
 
+/* CSS Step 7  */
+
+.projects a.disabled {
+  opacity: 0.5;
+}
 
 
 @media screen and (min-width: 700px) {
