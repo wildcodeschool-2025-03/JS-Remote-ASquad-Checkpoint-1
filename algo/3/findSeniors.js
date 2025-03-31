@@ -22,11 +22,15 @@ const persons = [
   { name: 'Millie', experience: 5, job: 'data analyst' },
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
-
 */
 
+
 function findSeniors(persons) {
-  // Your code here !
+  const seniorDevs = persons.filter (person => person.experience >= 5);
+  const devWebSeniors = seniorDevs.filter (person => person.job ==="web dev");
+  const dataAnalystsSeniors = seniorDevs.filter (person => person.job ==="data analyst");
+  const seniors = [devWebSeniors, dataAnalystsSeniors];
+  return seniors;
 }
 
 module.exports = findSeniors;
