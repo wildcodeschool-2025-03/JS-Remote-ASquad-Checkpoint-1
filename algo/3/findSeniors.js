@@ -27,6 +27,17 @@ const persons = [
 
 function findSeniors(persons) {
   // Your code here !
+  webdev = [];
+  dataanalyst = [];
+  persons.forEach((person) => {
+    if (person.job === "web dev" && person.experience >= 5) {
+      webdev.push(person);
+    } else if (person.job === "data analyst" && person.experience >= 5) {
+      dataanalyst.push(person);
+    }
+  });
+
+  return [webdev, dataanalyst];
 }
 
 module.exports = findSeniors;
