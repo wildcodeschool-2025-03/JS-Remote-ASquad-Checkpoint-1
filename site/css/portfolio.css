@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+
 :root {
   --radius: 12px;
 
@@ -107,4 +109,28 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    margin-left: auto; 
+    display: flex;
+    gap: 5px; 
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+  }
 }
