@@ -26,11 +26,13 @@ body {
   font-family: "Dosis", sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 header nav {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+  justify-content: space-between;
 }
 
 header nav img {
@@ -40,12 +42,17 @@ header nav img {
 
 li {
   list-style-type: none;
+
 }
 
 a {
   padding: var(--gutter);
   text-decoration: none;
   color: black;
+}
+
+.box a {
+  opacity: 0.5;
 }
 
 button:focus {
@@ -59,3 +66,5 @@ button:focus {
 #firstname {
   color: red;
 }  
+
+

@@ -32,6 +32,29 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: none;
+}
+
+.avatar {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#changeColorBtn {
+  border: solid white 1px;
+  background-color: rgb(255,255,255,0.3);
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .description {
@@ -43,7 +66,7 @@ p {
 }
 
 .description p {
-  width: 60%;
+  width: 90%;
   text-align: var(--textAlign);
 }
 
@@ -55,6 +78,9 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -107,4 +133,30 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+
+/* responsive Desktop ! */
+
+
+@media screen and (min-width: 700px) {
+  .desktop {
+    display: block;
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row-reverse;    
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
