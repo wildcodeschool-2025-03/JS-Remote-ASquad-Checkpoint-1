@@ -114,6 +114,10 @@ p {
   flex-direction: column-reverse;
 }
 
+.disabled {
+  opacity: 0.33;
+}
+
 @media screen and (max-width: 699px) {
   .desktop {
     display: none;
