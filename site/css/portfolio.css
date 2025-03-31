@@ -148,3 +148,13 @@ color: var(--textColor);
 .disabled {
   opacity: 0.5;
 }
+
+#nameBtn{
+margin-bottom: 1rem;
+border-radius: 12px;
+background-color: var(--wildColor);
+color: var(--textColor);
+}
+
+
+
