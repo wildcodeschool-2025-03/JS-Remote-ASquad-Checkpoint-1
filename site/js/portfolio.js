@@ -10,10 +10,19 @@ avatar.onclick = function () {
 
 const buttonChangeName = document.querySelector("button");
 const firstName = document.getElementById("firstname");
-const background = document.querySelector(".pink-bg");
+const backgrounds = document.querySelectorAll(".pink-bg");
+const pinkTexts = document.querySelectorAll(".pink-text");
 
 buttonChangeName.addEventListener('click', function() {
-    background.style.backgroundColor = prompt("Enter a color: ");
+    const newColor = prompt("Enter a color: "); 
+
+    for (const background of backgrounds) {
+        background.style.backgroundColor = newColor;
+    }
+    
+    for (const pinkText of pinkTexts) {
+        pinkText.style.color = newColor;
+    }
     firstName.textContent = prompt("Enter your name: ");
     firstName.style.color = "white";
-})
+});  
