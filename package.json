@@ -24,5 +24,8 @@
   "homepage": "https://github.com/WildCodeSchool/js_checkpoint1#readme",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "wink": "^0.0.1"
   }
 }
