@@ -9,20 +9,28 @@ avatar.onclick = function () {
 }
 
 const buttonChangeName = document.querySelector("button");
-const firstName = document.getElementById("firstname");
-const backgrounds = document.querySelectorAll(".pink-bg");
-const pinkTexts = document.querySelectorAll(".pink-text");
+
 
 buttonChangeName.addEventListener('click', function() {
+    const firstName = document.getElementById("firstname");
+    const backgrounds = document.querySelectorAll(".pink-bg");
+    const pinkTexts = document.querySelectorAll(".pink-text");
+
     const newColor = prompt("Enter a color: "); 
 
     for (const background of backgrounds) {
         background.style.backgroundColor = newColor;
     }
-    
+
     for (const pinkText of pinkTexts) {
         pinkText.style.color = newColor;
     }
     firstName.textContent = prompt("Enter your name: ");
     firstName.style.color = "white";
+
+    const links = document.querySelectorAll("a");
+    for (const link of links) {
+        link.style.color = newColor;
+    }
 });  
+
