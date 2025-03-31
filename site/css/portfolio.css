@@ -124,6 +124,11 @@ nav {
   align-items: center;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 /* Ecran inferieurs à 700px */
