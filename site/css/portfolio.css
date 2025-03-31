@@ -145,4 +145,14 @@ p {
   .skills section {
     width: 45%;
   }
+
+  .display-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    width: 28%;
+  }
 }
