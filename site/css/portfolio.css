@@ -112,6 +112,11 @@ p {
 .disabled {
   opacity: 0.3;
 }
+
+.projects{
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
 @media screen and (min-width: 700px) {
   
   nav {
