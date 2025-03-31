@@ -109,6 +109,12 @@ p {
   color: var(--purple);
 }
 
+@media screen and (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 700px) {
   nav {
     display: flex;
