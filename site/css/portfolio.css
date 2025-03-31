@@ -123,7 +123,20 @@ p {
 .avatar-bis{
   width: 30vh;
 }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills--title {
+    grid-row-start:1 ;
+    grid-column: span 2;
+  }
+  .column {
+    grid-row-start:2;
+  }
 }
+
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
