@@ -23,10 +23,9 @@ descriptionSection.appendChild(modifyButton);
 
 
 modifyButton.addEventListener('click', () => {
-    
-    const newColor = prompt('Enter a color:');
+    const OtherColor = prompt('Enter a color:');
   
-    if (newColor) {
+    if (OtherColor) {
       const newName = prompt('Enter your name:');
   
       if (newName) {
@@ -34,7 +33,15 @@ modifyButton.addEventListener('click', () => {
         firstNameSpan.textContent = newName;
         firstNameSpan.style.color = 'white';
   
-        document.querySelector('.description.pink-bg').style.backgroundColor = newColor;
+        const descriptionSections = document.querySelectorAll('.description.pink-bg');
+        descriptionSections.forEach(section => {
+            section.style.backgroundColor = OtherColor;
+        });
+          
+        const pinkTexts = document.querySelectorAll('.pink-text');
+        pinkTexts.forEach(text => {
+          text.style.color = OtherColor;
+        });
       }
     }
   });
