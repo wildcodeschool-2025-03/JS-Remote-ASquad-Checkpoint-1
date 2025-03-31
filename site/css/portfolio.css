@@ -160,6 +160,17 @@ nav {
   display: none;
 }
 
+/* Step 8 */
+
+.projects {
+  text-align: center;
+}
+
+.projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 }
