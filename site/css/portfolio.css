@@ -28,10 +28,19 @@ p {
   margin-bottom: var(--gutter);
 }
 
+.firstBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .desktop {
+  display: none;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -55,6 +64,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills--title {
@@ -62,25 +73,29 @@ p {
   text-align: var(--textAlign);
 }
 
+
 .column {
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  
 }
 
 .column:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+  order: 2;
 }
 
 .column:last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  order: 1;
 }
 
 .column ul {
@@ -107,4 +122,46 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+@media screen and (min-width: 700px) {
+ nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+ }
+
+  .desktop {
+    display: flex;
+    margin: 0;
+    margin-top: calc(var(--gutter) * 5);
+    margin-bottom: calc(var(--gutter) * -0.3125);
+  }
+
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  #front {
+    order: 2;
+  }
+  
+  #back {
+    order: 1;
+  
+  }
+
+  .column {
+    padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 10);
+    border-radius: var(--radius );
+  }
+
+
+  
 }
