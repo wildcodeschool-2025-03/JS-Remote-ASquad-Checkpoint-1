@@ -1,6 +1,6 @@
 const avatarImg = document.querySelector(".avatar");
 const avatarImg2 = document.querySelector(".avatar2");
-const pinkBg = document.querySelector(".description pink-bg");
+const pinkBg = document.querySelector(".pink-bg");
 const btn = document.querySelector(".btn");
 let firstname = document.querySelector("#firstname");
 
@@ -11,8 +11,13 @@ avatarImg.addEventListener("click", () => {
 })
 
 btn.addEventListener("click", () => {
-    let userName = prompt("What's your name");
+    let color = prompt("Enter a color");
+    pinkBg.style.backgroundColor = `${color}`;
+    console.log(color);
+
+    let userName = prompt("Enter your name");
     firstname.style.color = "white";
     firstname.innerHTML = `${userName}`;
 
 })
+
