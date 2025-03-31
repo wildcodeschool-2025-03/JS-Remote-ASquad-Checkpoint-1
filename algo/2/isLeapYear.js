@@ -8,7 +8,16 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 */
 
 function isLeapYear(year) {
-  // Your code here !
+  let LeapYear = false;
+
+  if (year % 4 == 0 && year % 100 !== 0) {
+    LeapYear = true;
+  } else if (year % 400 == 0) {
+    LeapYear = true;
+  }
+
+  return LeapYear;
+
 }
 
 module.exports = isLeapYear;
